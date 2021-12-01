@@ -136,27 +136,9 @@
 /* Global font */
 body { font-family: var(--global-font) }
 
+header.hero-block { background-color: var(--pink-800) }
+header.hero-block h1 { color: var(--green-600) }
+header.hero-block a.btn-primary:link,
+header.hero-block a.btn-primary:visited { background-color: var(--green-500) }
 
-/* ========= THEME ONE ========== */
 
-/* Background colour */
-.theme-one .col-1 h3 { color: var(--gray-700) }
-
-.theme-two { background-color: var(--green-300) }
-
-footer { background-color: var(--ontrend-800) }
-
-/*=== Footer =====*/
-
-footer h2 { color: var(--black-000) }
-footer h3 { color: var(--black-000) }
-footer ul.footer-links li a:link, 
-footer ul.footer-links li a:visited { color: var(--gray-700); text-decoration-color: var(--gray-700) }
-
-footer p.privacy a:link, 
-footer p.privacy a:visited { color: var(--gray-700); text-decoration-color: var(--gray-700) }
-
-footer ul.footer-icons li a:link i, 
-footer ul.footer-icons li a:visited i { color: var(--gray-700)
-
-}
