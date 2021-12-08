@@ -11,8 +11,8 @@
 
 
 	<!-- Stylesheets -->
-    <link rel="stylesheet" href="../assets/css/lunadoge.css" />
-    <link rel="stylesheet" href="../assets/css/custom.css" />
+    <link rel="stylesheet" href="assets/css/lunadoge.css" />
+    <link rel="stylesheet" href="assets/css/custom.css" />
 
 	<!-- Google Fonts -->
 
@@ -35,95 +35,92 @@
 
   gtag('config', 'G-Q76TKNXP6Y');
 </script>
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
 </head>
 
 
 <body>
 
     <!-- navigation menu -->
-    <nav></nav>
+    
+    <nav class="container-menu menu-desktop menu-sticky">
+        <a href="#"><img src="assets/img/website-logo.png" alt="website logo"></a>
+        <ul>
+            <li><a href="#">Link</a></li>
+            <li><a href="#">Link</a></li>
+            <li><a href="#">Link</a></li>            
+            <li><a href="#" id="btn-cta" class="btn-soft"><span>CTA Link</span><i class="fas fa-arrow-right"></i></a></li>
+        </ul>
+        <div class="item-icon">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
+    </nav>
+
 
     <!-- header -->
-    
-        <header class="hero-block hero-half half-img-right text-center-mobile">
+    <header class="hero-block hero-half half-img-right text-center-mobile">
+        <div class="col-2">
+            <div class="hero-text-container ">
+            <h1 class="slide-in-left">Hi, my name is Denisa</h1>
+            <h2 class="slide-in-left">I create eye-catching and easy to navigate web designs</h2>
+            <div class="container-btn"><a href="portfolio/" class="btn btn-primary btn-soft"><i class="far fa-folder-open"></i><span>See my work</span></a><a href="contact/" class="btn btn-secondary btn-soft"><i class="fas fa-at"></i><span>Contact me</span></a></div>
+        </div>
+    </div><div class="col-2">
+            <div class="hero-bg-media">
+            <img src="assets/img/web-design.jpg" alt="web design">
+            </div>
+        </div>
+    </header>
 
-            <div class="col-2">
-                <div class="hero-text-container">
-                    <h1 class="text-shadow fade-in">Welcome!</h1>
-                    <h2 class="text-shadow fade-in">Check out my most recent work and creations</h2>
-                </div>
-                <div class="container-btn">
-                    <a href="../portfolio/index.html" class="btn btn-primary btn-soft"><i class="far fa-address-card"></i><span>Portfolio</span></a>
-                </div>
-                
-            </div>
-        
-            <div class="col-2">
-                <div class="hero-bg-media">
-                    <img src="../assets/img/pexels-ivan-samkov-4240587.jpg" alt="Sample image">
-                </div>
-            </div>
-        
-        </header>
     
 
     <!-- main content with sections -->
     <main>
-       
 
-        <section class="container-contact-form">
-
-            <!-- Contact form starts here -->
-            <form id="contact-form" name="contact-form" accept-charset="utf-8" method="post" action="https://formspree.io/f/mnqwalew">
-
-                <div class="contact-form-upper text-center">
-                    <h2>Lorem Ipsum</h2>
-                    <p>Vivamus malesuada, nibh a <a href="#">tempor convallis</a>, enim urna bibendum enim, eu ultrices leo libero proin.</p>
-                </div>
-
-                <!-- Begin contact form fields -->
-
-                <div class="flex-row">
-                    <div class="item-name">
-                        <label for="full-name">Full Name</label>
-                        <input type="text" name="name" id="full-name" placeholder="Your First and Last Name." required="">
-                    </div>
-                    <div class="item-email">
-                        <label for="email-address">Email</label>
-                        <input type="email" name="_replyto" id="email-address" placeholder="Your Email Address." required="">
-                    </div>
-                </div>
-
-                <div class="flex-row">
-                    <div class="item-textarea">
-                        <label for="message">Message</label>
-                        <textarea rows="5" name="message" id="message" placeholder="Your Message." required=""></textarea>
-                    </div>
-
-                    <div class="item-btn">
-                        <button id="btn-submit" type="submit"><span>Send</span><i class="fas fa-arrow-circle-right"></i></button> 
-                    </div>
-                </div>
-
-                <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
-                <!-- End contact form fields -->
-
-            </form><!-- Contact form ends here -->
-    </section><!-- End container for contact form -->
- 
-	
+        <section class="container-flex theme-two img-shadow img-border">
+            <div class="col-1 text-center">
+                <h2>Recent projects</h2>
+                <h3>Below you can see some examples of my recent work. Check out my complete portfolio.</h3>
+            </div>
+    
+            <div class="col-3">
+                <figure><img src="assets/img/project-van-gogh.png" alt="Placeholder image"></figure>
+                <h3>Vincent Van Gogh</h3>
+                <p>A summary of the life and work of Dutch artist Vincent van Gogh with an embeded video from YouTube.</p>
+            <a href="portfolio/van-gogh/" class="btn btn-primary btn-soft">
+            <i class="fas fa-angle-right"></i><span>View Project</span></a></div>
+    
+            <div class="col-3">
+                <figure><img src="assets/img/project-smoothie.jpg" alt="Placeholder image"></figure>
+                <h3>Smooth Smoothies</h3>
+                <p>A multi-column, flexbox-based page layout and hero image with a tinted overlay.</p>
+            <a href="portfolio/smoothies/index.html" class="btn btn-primary btn-soft">
+            <i class="fas fa-angle-right"></i><span>View Project</span></a></div>
+    
+            <div class="col-3">
+                <figure><img src="assets/img/project-fashion.jpg" alt="Placeholder image"></figure><h3>Snazzy Fashion</h3>
+                <p>A web page for a fashion retailer with a background video that plays in a continuous loop.</p>
+            <a href="portfolio/fashion/index.html" class="btn btn-primary btn-soft">
+                <i class="fas fa-angle-right"></i><span>View Project</span></a></div>
+        </section>
     </main>
 
     <!-- footer -->
-    <footer>
-        <h2>Consectetur Aipisicing</h2>
+    
+	
+	
+	<footer>
+
+		<h2>Consectetur Aipisicing</h2>
 
 		<h3>Nulla Repellat Nesciunt</h3>
 
 		<ul class="footer-links">
-			<li><a href="../">Home</a></li>
-			<li><a href="../portfolio/">Portfolio</a></li>
-			<li><a href="#">Contact</a></li>
+			<li><a href="#">Home</a></li>
+			<li><a href="portfolio/">Portfolio</a></li>
+			<li><a href="contact/">Contact</a></li>
 		</ul>
 
 		<ul class="footer-icons">
@@ -134,10 +131,24 @@
 			<li><a href="#" target="_blank"><i class="fab fa-instagram-square"></i></a></li>
 		</ul>
 
-		<p class="privacy"><a href="../privacy.html">Privacy &amp; Legal</a></p>
+		<p class="privacy"><a href="privacy.html">Privacy &amp; Legal</a></p>
 
-
-    </footer>
-   
+	</footer>
+    <script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js" data-cfasync="false"></script>
+    <script>
+    window.cookieconsent.initialise({
+      "palette": {
+        "popup": {
+          "background": "#000"
+        },
+        "button": {
+          "background": "#f1d600"
+        }
+      },
+      "content": {
+        "href": "https://denisamate.github.io/privacy.html"
+      }
+    });
+    </script>
 </body>
 </html>
